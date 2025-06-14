@@ -1,0 +1,147 @@
+.signin:hover {
+    background-color: rgb(197, 6, 16);
+    border-color: rgb(197, 6, 16);
+}
+
+.btn2:hover {
+    background-color: rgb(197, 6, 16);
+    border-color: rgb(197, 6, 16);
+}
+
+.sl:hover {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sl {
+    color: #9d9d9d;
+    transition: all 0.1s ease-in;
+}
+
+.thumbnail {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  flex-shrink: 0;
+  z-index: 1;
+  /* No overflow hidden here! */
+}
+
+.thumb-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.thumbnail:hover .thumb-inner {
+  transform: scale(1.05);
+  z-index: 5;
+}
+.content-wrapper {
+  overflow: visible; /* allows hovered scale to show */
+  position: relative;
+}
+
+
+.mtext:hover {
+    background-color: #3d3d3d;
+}
+
+.active {
+    height: auto;
+    overflow: visible;
+}
+
+.rotate {
+    animation: rotates 0.2s ease-in;
+}
+
+@keyframes rotates {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-315deg);
+    }
+}
+
+.mtransformforward1 {
+    transform: translateX(-1045px);
+}
+
+.mtransformforward2 {
+    transform: translateX(-1470px);
+}
+
+.mtransformbackward {
+    transform: translateX(0);
+}
+
+.slider2ani {
+    
+    opacity: 1;
+}
+@keyframes identifier {
+    from{left:-30px;
+    opacity: 0;}
+    to{left:-22px;
+    opacity: 1;}
+}
+@keyframes identifiers {
+    to{
+        left:-30px;
+        opacity: 0;
+    }
+}
+.slideras{
+    opacity: 0;
+}
+.spani{
+animation: identifiers 0.4s ease-out;
+}
+.spani2{
+animation:identifier 0.4s ease-in ;
+}
+.stx1{
+    height: 200px;
+    overflow: visible;
+    opacity: 1;
+   
+    
+}
+.stx2{
+    height: 100px;
+    overflow: visible;
+    opacity: 1;
+    
+}
+.stx3{
+    height: 200px;
+    overflow: visible;
+    opacity: 1;
+    
+}
+.stx4{
+    height: 100px;
+    overflow: visible;
+    opacity: 1; 
+    
+}
+.stx5{
+    height: 100px;
+    overflow: visible;
+    opacity: 1; 
+    
+}
+.stx6{
+    height: 200px;
+    overflow: visible;
+    opacity: 1; 
+}
+.ficontg{
+    rotate:45deg;
+}
