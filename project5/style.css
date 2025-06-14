@@ -1,6 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: 'Netflix Sans';
     font-weight: 100;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
 }
@@ -8,6 +9,7 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 300;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
 }
@@ -15,6 +17,7 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 400;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
 }
@@ -22,6 +25,7 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 700;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
 }
@@ -29,6 +33,7 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 800;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
 }
@@ -36,15 +41,17 @@
 @font-face {
     font-family: 'Netflix Sans';
     font-weight: 900;
+    font-display:swap;
     font-display: optional;
     src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'), url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
 
-}
-@font-face {
-   
-  font-display: swap;
-}
+} */
 
+
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 
 
@@ -52,13 +59,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     /* background-color: #0f1010; */
 }
 
 body {
     background-color: black;
     overflow-x: hidden;
+    /* margin: 0;
+    padding: 0; */
 }
 
 nav {
@@ -181,13 +190,14 @@ color:white;
 
 header {
     height: 900px;
-    width: 100%;
+    width: 2000px;
     background-image: url("img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     margin-top: 0;
     overflow-x: hidden;
+    overflow: hidden;
 
 
 }
@@ -196,8 +206,9 @@ header::before {
     content: "";
     position: absolute;
     height: 900px;
-    width: 100%;
+    width: 2000px;
     background-color: rgba(0, 0, 0, 0.712);
+    overflow: hidden;
 }
 
 .txt {
@@ -213,10 +224,11 @@ header::before {
 }
 
 .txt1 {
-    width: 600px;
+    width: 700px;
     text-align: center;
     font-size: 64px;
     font-weight: 900;
+ 
 }
 
 .txt2 {
@@ -273,15 +285,16 @@ header::before {
 header::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -16px;
     background-color: black;
     border-top: 5px solid #e40914;
-    height: 50px;
+    height: 60px;
     right: -39px;
     border-top-left-radius: 110%;
     border-top-right-radius: 117%;
     /* border-radius: 50%; */
     width: 110%;
+    overflow: hidden;
     /* z-index: 0; */
     box-shadow: inset -5px 10px 15px #121b41;
 }
@@ -313,7 +326,7 @@ main {
     width: 1132px;
     height: 350px;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
     margin-left: 30px;
     position: relative;
@@ -353,7 +366,8 @@ z-index: 2;
     margin-left: 40px;
     margin-bottom: 60px;
     cursor: pointer;
-    transition: all 0.4s ease-in;
+    transition: all 0.5s ease-in-out;
+    
     
 }
 .num{
@@ -386,13 +400,18 @@ font-weight: 900;
     font-size: 32px;
     font-weight: 700;
     margin-left: 15px;
-    margin-top: -195px;
+    margin-top: -200px;
 
 }
 .container{
 display: flex;
 gap: 15px;
-margin-top: 20px;
+margin-top: 40px;
+margin: 0;
+    padding: 0;
+}
+.nr{
+    margin-bottom: 20px;
 }
 .box{
     height: 320px;
@@ -408,7 +427,7 @@ margin-top: 20px;
 }
 .intext{
      font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.705);
     margin-left: 30px;
     line-height: 1.5;
@@ -594,3 +613,127 @@ z-index: 2;
     z-index: 2;
     color: white;
 }
+/* @media (max-width: 1200px) {
+    nav {
+        margin: 0 100px;
+    }
+    .content, .more, .containertxt, .footer {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .txt1 {
+        font-size: 48px;
+        width: 90%;
+    }
+    .txt2, .txt3 {
+        text-align: center;
+        width: 90%;
+    }
+    .userinput {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input, .btn2 {
+        width: 90%;
+    }
+    .movies {
+        width: 180px;
+        height: 260px;
+    }
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 20px;
+    }
+    .language, .signin {
+        margin-top: 10px;
+    }
+    .txt1 {
+        font-size: 36px;
+    }
+    .btn2 {
+        font-size: 20px;
+        height: 45px;
+    }
+    .movies {
+        width: 150px;
+        height: 220px;
+    }
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .mtext, .stext {
+        width: 100%;
+    }
+    .more {
+        width: 100%;
+    }
+    footer {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .txt1 {
+        font-size: 28px;
+    }
+    .txt2, .txt3 {
+        font-size: 14px;
+    }
+    .input, .btn2 {
+        width: 100%;
+    }
+    .btn2 {
+        font-size: 18px;
+    }
+    .movies {
+        width: 120px;
+        height: 180px;
+    }
+    .titles {
+        font-size: 20px;
+        margin: 20px;
+    }
+    .intext {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .foottext, .footer-links a {
+        font-size: 12px;
+    }
+    .footer-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer {
+        width: 95%;
+        padding: 20px;
+    }
+} */
+/* .more, .containertxt, .footer, .content {
+    margin-left: auto;
+    margin-right: auto;
+} */
+@media only screen and (max-width<990px) {
+    
+}
+    
+@media only screen and (max-width:1150px) {
+    .mtext,.stext{
+        width: 800px;
+    }
+}
+    
+ 
